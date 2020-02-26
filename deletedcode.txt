@@ -1,0 +1,64 @@
+
+// const options = currencyOptions.map(
+//   (v, i, list) => `<option value=${i}>${v} (${i})</option>`
+// );
+// console.log(options);
+// container.innerHTML = options;
+
+// rates => console.log(rates),
+// (currencyOptions = [...Object.keys(rates)])
+
+// get the currencies from url const
+
+/*
+async function getCurrencies() {
+  const result = await fetch(url);
+  const currencies = await result.json();
+  return currencies;
+}
+*/
+/*
+  getCurrencies()
+    .then(currencies => populateDropList(currencies, fromSelect))
+    .then(getFromCurrency)
+    .catch(error => console.log(error));
+
+  getCurrencies()
+    .then(currencies => populateDropList(currencies, toSelect))
+    .then(getToCurrency)
+    .catch(error => console.log(error));
+*/
+
+// stop it for now
+//  get all currencies then populate drop list
+/*
+  //   const currencies =
+  getCurrencies()
+    .then(currencies => displayDropList(currencies))
+    // .then(currencies => displayDropList(currencies))
+    .then(getCurrencySelectDom);
+    */
+/*
+// 1. get all currencies
+// const currencies = getCurrencies().then(currencies => console.log(currencies));
+
+// 2. loop through currencies and build 2 select
+function displayDropList(currencies) {
+  let result = `
+  <label for="currency-select">Choose Currency:</label>
+  <select name="currencies" id="currency-select">
+    <option value="">--Please choose an option--</option>`;
+
+  Object.keys(currencies).forEach(fill);
+
+  result += `</select>`;
+  container.innerHTML = result;
+
+  // ******* inner callback function *********
+
+  function fill(key) {
+    result += `<option data-id=${key} value=${key}>${currencies[key]} (${key})</option>`;
+    // console.log(key, currencies[key]);
+  }
+}
+*/

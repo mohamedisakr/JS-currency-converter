@@ -3,23 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="test.css" />
+    <link rel="stylesheet" href="main.css" />
     <title>Currency Converter</title>
   </head>
   <body>
     <div class="container">
-      <!-- 
-      <label for="currency-select">Choose Currency:</label>
-      <select name="currencies" id="currency-select">
-        <option value="">--Please choose an option--</option>
-        <option value="dog">Dog</option>
-        <option value="cat">Cat</option>
-        <option value="hamster">Hamster</option>
-        <option value="parrot">Parrot</option>
-        <option value="spider">Spider</option>
-        <option value="goldfish">Goldfish</option>
-      </select> 
-    --></div>
-    <script src="currencies.js"></script>
+      <h2>Currency Converter</h2>
+      <div>
+        <input
+          type="number"
+          name="fromCurrency"
+          id="fromCurrency"
+          class="input"
+        />
+        <select name="fromSelect" id="fromSelect"> </select>
+      </div>
+      <div>
+        <input type="number" name="toCurrency" id="toCurrency" class="input" />
+        <select name="toSelect" id="toSelect"> </select>
+      </div>
+    </div>
+    <script src="app.js"></script>
   </body>
 </html>
